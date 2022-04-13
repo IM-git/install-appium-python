@@ -2,7 +2,11 @@ from appium import webdriver
 
 
 """These are the configuration keys from the virtual mobile,
-we will use it for testing."""
+we will use it for testing.
+The 'app' this a just a folder with code is locate on the specified path,
+the location may differ.
+More information: https://pypi.org/project/Appium-Python-Client/"""
+
 desired_capabilities = {
     "platformName": "Android",
     "platformVersion": "9",
