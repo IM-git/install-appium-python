@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+.idea
+debug.json
+.git
+tests/test_main.py
+src/locators/main.py
+pages/main_page.py
+allureress/
+app/org.wikipedia-2.7.276-r-2019-03-27.apk
