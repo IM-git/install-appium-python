@@ -16,13 +16,13 @@ ___
 
 <H3>Steps for installing and using Appium:</H3>
 
-**Step 1.**
+**Step 1**
 
 - Download **JDK** version 8 from official website:\
 _https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html_
 - Install the **JDK 8**(_in my case, the **JDK 8** version is jdk-8u202-windows-x64_).
 
-**Step 2.**
+**Step 2**
 
 - Download **Android SDK** from official website:
 _https://developer.android.com/studio_
@@ -31,7 +31,7 @@ _https://developer.android.com/studio_
 _The path to install the program C:\androidSDK.
 (for more information about the installation steps, see the YouTube video above.)_
 
-**Step 3.**
+**Step 3**
 
 **Need to configurate environment variables:**
 - Click 'Start'
@@ -54,15 +54,15 @@ installed AndroidSDK folder (_the path: C:\androidSDK_)
   - Click 'OK'
 - Click 'OK'
 
-**Step 4.**
+**Step 4**
 
 - Download **Appium** from official website:
 _http://appium.io_
 - Install **Appium**.
 
-**Step 5.**
+**Step 5**
 
-- Create python project (_for example in PyCharm_).
+- Create python project (_for example in **PyCharm**_).
 - Create the virtual environment:\
     `py -m venv venv`
 - Run the virtual environment:\
@@ -70,11 +70,11 @@ _http://appium.io_
 - Install library:\
     `pip install Appium-Python-Client`
 
-**Step 6.**
+**Step 6**
 
 - Download wikipedia app for android from internet(_*.apk format_). 
 
-**Step 7.**
+**Step 7**
 
 - Run **Android Studio** (_Android SDK_).
 - Click 'Tools' in the menu bar, click a 'Device Manager'.
@@ -82,24 +82,24 @@ _http://appium.io_
 You can to choice any mobile option. (_My options: Pixel 2 Api, Android 9.0)._
 - Run virtual mobile (_Launch this AVD in the emulator_).
 
-**Step 8.**
+**Step 8**
 
 - Create in the python project a folder. The name folder is 'app', but can choose another name.
 - Paste wikipedia.apk file there.
 - Install wikipedia on virtual mobile: just drag and drop *.apk file to the screen virtual mobile.
 
-**Step 9.**
+**Step 9**
 
 - Run **Appium Server GUI**.
 - Click 'start server'.
 
-**Step 10.**
+**Step 10**
 
 - Create python file, for example: test_appium_wiki_app.py
 - Enter the code there (_code look in the [test_appium_wiki_app.py](tests/test_appium_wiki_app.py)_)
 - Perform the test.
 
-**Step 11.**
+**Step 11**
 
 _Version 1:_
 - For _searching/using_ in Appium the locators like in the selenium need to use **UI Automator**.\
@@ -111,7 +111,8 @@ _Version 2:_
 - Can use **Appium Inspector** for parsing the locators.
 Previously the **Appium Inspector** was part of **Appium Server GUI**.
 Now it's separate tool, read more [here](https://github.com/appium/appium-inspector). \
-Link on the releases: https://github.com/appium/appium-inspector/releases.
+Link on the releases: https://github.com/appium/appium-inspector/releases, or
+web version the **Appium Inspector**: https://inspector.appiumpro.com/.
 - Customization:
     - Look [THERE](https://stackoverflow.com/a/70223063)
     - In 'JSON Representation' field need copy from python test, in my option it looks like:
@@ -122,13 +123,14 @@ Link on the releases: https://github.com/appium/appium-inspector/releases.
     "platformVersion": "9"
     }
 - Click 'Save As' (_Enter any name_).
+- Click 'Start Session'.
 ___
 
 Sources which I used:\
-_https://youtu.be/5rUIT9KxheE_
+_https://youtu.be/5rUIT9KxheE_ \
 _https://www.youtube.com/playlist?list=PLWIBmxdTr81dDEZRiNxoy55dIDWtMyOoc_ \
 _https://programmersought.com/article/90436050032/_ \
 _https://pypi.org/project/Appium-Python-Client/_ \
-_https://appium.io/docs/en/about-appium/intro/#introduction-to-appium_ 
+_https://appium.io/docs/en/about-appium/intro/#introduction-to-appium_ \
 _https://stackoverflow.com/a/70223063_ \
 _https://github.com/appium/appium-inspector_
