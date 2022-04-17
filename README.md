@@ -14,7 +14,7 @@ _Prerequisites: **Python3** is already installed._
 In addition, you can watch a useful **[video on YouTube](https://youtu.be/5rUIT9KxheE)** with basic installation steps.
 ___
 
-###**Steps for installing and using Appium:**
+<H3>Steps for installing and using Appium:</H3>
 
 **Step 1.**
 
@@ -98,14 +98,31 @@ You can to choice any mobile option. (_My options: Pixel 2 Api, Android 9.0)._
 - Create python file, for example: test_appium_wiki_app.py
 - Enter the code there (_code look in the [test_appium_wiki_app.py](tests/test_appium_wiki_app.py)_)
 - Perform the test.
-___
 
-###**Addition.**
+**Step 11.**
 
-For _searching/using_ in Appium the locators like in the selenium need to use **UI Automator**.\
-Look this program in: _C:\androidSDK\tools\bin\uiautomatorviewer.bat_\
-When open the page in virtual mobile, in 'uiautomatorviewer' click 'Device Screenshot'.\
+_Version 1:_
+- For _searching/using_ in Appium the locators like in the selenium need to use **UI Automator**.\
+Look this program in: _C:\androidSDK\tools\bin\uiautomatorviewer.bat_
+- When open the page in virtual mobile, in 'uiautomatorviewer' click 'Device Screenshot'.\
 After that you'll be able to parse this page-screenshot.
+
+_Version 2:_
+- Can use **Appium Inspector** for parsing the locators.
+Previously the **Appium Inspector** was part of **Appium Server GUI**.
+Now it's separate tool, read more [here](https://github.com/appium/appium-inspector). \
+Link on the releases: https://github.com/appium/appium-inspector/releases.
+- Customization:
+    - Look [THERE](https://stackoverflow.com/a/70223063)
+    - In 'JSON Representation' field need copy from python test, in my option it looks like:
+    ```
+    {
+    "platformName": "Android",
+    "deviceName": "Android Emulator",
+    "platformVersion": "9"
+    }
+- Click 'Save As' (_Enter any name_).
+___
 
 Sources which I used:\
 _https://youtu.be/5rUIT9KxheE_
@@ -113,4 +130,5 @@ _https://www.youtube.com/playlist?list=PLWIBmxdTr81dDEZRiNxoy55dIDWtMyOoc_ \
 _https://programmersought.com/article/90436050032/_ \
 _https://pypi.org/project/Appium-Python-Client/_ \
 _https://appium.io/docs/en/about-appium/intro/#introduction-to-appium_ 
-
+_https://stackoverflow.com/a/70223063_ \
+_https://github.com/appium/appium-inspector_
